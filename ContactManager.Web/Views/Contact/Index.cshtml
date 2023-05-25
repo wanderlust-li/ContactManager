@@ -1,1 +1,10 @@
-<h1 text-align="center">hi</h1>
+@model IEnumerable<ContactManager.Models.Contact>
+
+@foreach (var items in Model)
+{
+    <h1>@items.Id</h1>
+    <h1>@items.Name</h1>
+    <h1>@items.Surname</h1>
+    <h1>@items.Email</h1>
+    <h1>@items.PhoneNumber</h1>
+}
