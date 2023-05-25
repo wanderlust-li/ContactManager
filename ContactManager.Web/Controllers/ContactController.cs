@@ -66,4 +66,31 @@ public class ContactController : Controller
         _context.SaveChanges();
         return RedirectToAction("Index");
     }
+
+    public IActionResult Edit(int? id)
+    {
+        if (id == null || id == 0)
+            return NotFound();
+        
+        var contactFromDb = _context.Contacts.FirstOrDefault(u => u.Id == id);
+        
+        if (contactFromDb == null)
+            return NotFound();
+
+        return View(contactFromDb);
+    }
+
+    [HttpPost]
+    [ValidateAntiForgeryToken]
+    public IActionResult Edit(Contact contact)
+    {
+        if (ModelState.IsValid)
+        {
+            _context.Contacts.Update(contact);
+            _context.SaveChanges();
+            return RedirectToAction("Index");
+        }
+
+        return View(contact);
+    }
 }
