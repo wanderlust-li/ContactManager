@@ -4,6 +4,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContactManager.Web", "Conta
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContactManager.Models", "ContactManager.Models\ContactManager.Models.csproj", "{2F5BD3A7-5390-45D6-AF5D-CEA5C09D1A9F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContactManager.Data", "ContactManager.Data\ContactManager.Data.csproj", "{885846AC-9963-4241-8BBF-91385FCEF986}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +20,9 @@ Global
 		{2F5BD3A7-5390-45D6-AF5D-CEA5C09D1A9F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2F5BD3A7-5390-45D6-AF5D-CEA5C09D1A9F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2F5BD3A7-5390-45D6-AF5D-CEA5C09D1A9F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{885846AC-9963-4241-8BBF-91385FCEF986}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{885846AC-9963-4241-8BBF-91385FCEF986}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{885846AC-9963-4241-8BBF-91385FCEF986}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{885846AC-9963-4241-8BBF-91385FCEF986}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
