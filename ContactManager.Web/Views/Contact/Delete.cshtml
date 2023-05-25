@@ -1,0 +1,33 @@
+@model ContactManager.Models.Contact
+
+<form method="post" asp-action="Delete">
+    <input asp-for="Id" hidden />
+    <div class="border p-3 mt-4">
+        <div class="row pb-2">
+            <h2 class="text-primary">Delete Category</h2>
+            <hr/>
+        </div>
+        @* <div asp-validation-summary="All"></div> *@
+        <div class="mb-3">
+            <label asp-for="Name">Name</label>
+            <input asp-for="Name" disabled class="form-control"/>
+        </div>
+        <div class="mb-3">
+            <label asp-for="Surname">Surname</label>
+            <input asp-for="Surname" disabled class="form-control"/>
+        </div>
+        <div class="mb-3">
+            <label asp-for="Email">Email</label>
+            <input asp-for="Email" disabled class="form-control"/>
+        </div>
+        <div class="mb-3">
+            <label asp-for="PhoneNumber">PhoneNumber</label>
+            <input asp-for="PhoneNumber" disabled class="form-control"/>
+        </div>
+        
+        <button type="submit" class="btn btn-danger" style="width: 150px">Delete</button>
+        <a asp-controller="Contact" asp-action="Index" class="btn btn-secondary" style="width: 150px">
+            Back To List
+        </a>
+    </div>
+</form>

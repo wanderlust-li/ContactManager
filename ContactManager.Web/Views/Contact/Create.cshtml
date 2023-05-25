@@ -1,0 +1,35 @@
+@model ContactManager.Models.Contact
+
+<form method="post">
+    <div class="border p-3 mt-4">
+        <div class="row pb-2">
+            <h2 class="text-primary">Create Contact</h2>
+            <hr/>
+        </div>
+        @* <div asp-validation-summary="All"></div> *@
+        <div class="mb-3">
+            <label asp-for="Name">Name</label>
+            <input asp-for="Name" class="form-control"/>
+            <span asp-validation-for="Name" class="text-danger"></span>
+        </div>
+        <div class="mb-3">
+            <label asp-for="Surname">Surname</label>
+            <input asp-for="Surname" class="form-control"/>
+            <span asp-validation-for="Surname" class="text-danger"></span>
+        </div>
+        <div class="mb-3">
+            <label asp-for="Email">Email</label>
+            <input asp-for="Email" class="form-control"/>
+            <span asp-validation-for="Email" class="text-danger"></span>
+        </div>
+        <div class="mb-3">
+            <label asp-for="PhoneNumber">PhoneNumber</label>
+            <input asp-for="PhoneNumber" class="form-control"/>
+            <span asp-validation-for="PhoneNumber" class="text-danger"></span>
+        </div>
+        <button type="submit" class="btn btn-primary" style="width: 150px">Create</button>
+        <a asp-controller="Contact" asp-action="Index" class="btn btn-secondary" style="width: 150px">
+            Back To List
+        </a>
+    </div>
+</form>
