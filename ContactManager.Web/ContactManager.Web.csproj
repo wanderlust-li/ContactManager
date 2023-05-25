@@ -19,4 +19,9 @@
       </PackageReference>
     </ItemGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\ContactManager.Data\ContactManager.Data.csproj" />
+      <ProjectReference Include="..\ContactManager.Models\ContactManager.Models.csproj" />
+    </ItemGroup>
+
 </Project>

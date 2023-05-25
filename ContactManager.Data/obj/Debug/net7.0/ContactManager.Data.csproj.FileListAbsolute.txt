@@ -1,0 +1,17 @@
+D:\ContactManager\ContactManager.Data\bin\Debug\net7.0\ContactManager.Data.deps.json
+D:\ContactManager\ContactManager.Data\bin\Debug\net7.0\ContactManager.Data.dll
+D:\ContactManager\ContactManager.Data\bin\Debug\net7.0\ContactManager.Data.pdb
+D:\ContactManager\ContactManager.Data\bin\Debug\net7.0\ContactManager.Models.dll
+D:\ContactManager\ContactManager.Data\bin\Debug\net7.0\ContactManager.Models.pdb
+D:\ContactManager\ContactManager.Data\obj\Debug\net7.0\ContactManager.Data.csproj.AssemblyReference.cache
+D:\ContactManager\ContactManager.Data\obj\Debug\net7.0\ContactManager.Data.GeneratedMSBuildEditorConfig.editorconfig
+D:\ContactManager\ContactManager.Data\obj\Debug\net7.0\ContactManager.Data.AssemblyInfoInputs.cache
+D:\ContactManager\ContactManager.Data\obj\Debug\net7.0\ContactManager.Data.AssemblyInfo.cs
+D:\ContactManager\ContactManager.Data\obj\Debug\net7.0\ContactManager.Data.csproj.CoreCompileInputs.cache
+D:\ContactManager\ContactManager.Data\obj\Debug\net7.0\ContactManager.Data.csproj.CopyComplete
+D:\ContactManager\ContactManager.Data\obj\Debug\net7.0\ContactManager.Data.dll
+D:\ContactManager\ContactManager.Data\obj\Debug\net7.0\refint\ContactManager.Data.dll
+D:\ContactManager\ContactManager.Data\obj\Debug\net7.0\ContactManager.Data.pdb
+D:\ContactManager\ContactManager.Data\obj\Debug\net7.0\ref\ContactManager.Data.dll
+D:\ContactManager\ContactManager.Data\bin\Debug\net7.0\ContactManager.Data.runtimeconfig.json
+D:\ContactManager\ContactManager.Data\obj\Debug\net7.0\ContactManager.Data.genruntimeconfig.cache

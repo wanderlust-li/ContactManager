@@ -1,0 +1,14 @@
+D:\ContactManager\ContactManager.Models\bin\Debug\net7.0\ContactManager.Models.deps.json
+D:\ContactManager\ContactManager.Models\bin\Debug\net7.0\ContactManager.Models.runtimeconfig.json
+D:\ContactManager\ContactManager.Models\bin\Debug\net7.0\ContactManager.Models.dll
+D:\ContactManager\ContactManager.Models\bin\Debug\net7.0\ContactManager.Models.pdb
+D:\ContactManager\ContactManager.Models\obj\Debug\net7.0\ContactManager.Models.csproj.AssemblyReference.cache
+D:\ContactManager\ContactManager.Models\obj\Debug\net7.0\ContactManager.Models.GeneratedMSBuildEditorConfig.editorconfig
+D:\ContactManager\ContactManager.Models\obj\Debug\net7.0\ContactManager.Models.AssemblyInfoInputs.cache
+D:\ContactManager\ContactManager.Models\obj\Debug\net7.0\ContactManager.Models.AssemblyInfo.cs
+D:\ContactManager\ContactManager.Models\obj\Debug\net7.0\ContactManager.Models.csproj.CoreCompileInputs.cache
+D:\ContactManager\ContactManager.Models\obj\Debug\net7.0\ContactManager.Models.dll
+D:\ContactManager\ContactManager.Models\obj\Debug\net7.0\refint\ContactManager.Models.dll
+D:\ContactManager\ContactManager.Models\obj\Debug\net7.0\ContactManager.Models.pdb
+D:\ContactManager\ContactManager.Models\obj\Debug\net7.0\ContactManager.Models.genruntimeconfig.cache
+D:\ContactManager\ContactManager.Models\obj\Debug\net7.0\ref\ContactManager.Models.dll

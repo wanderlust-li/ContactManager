@@ -1132,6 +1132,34 @@
             "rid": "win"
           }
         }
+      },
+      "ContactManager.Data/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "ContactManager.Models": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "7.0.5"
+        },
+        "compile": {
+          "bin/placeholder/ContactManager.Data.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ContactManager.Data.dll": {}
+        }
+      },
+      "ContactManager.Models/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "7.0.5",
+          "Microsoft.EntityFrameworkCore.SqlServer": "7.0.5"
+        },
+        "compile": {
+          "bin/placeholder/ContactManager.Models.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ContactManager.Models.dll": {}
+        }
       }
     }
   },
@@ -3452,10 +3480,22 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "ContactManager.Data/1.0.0": {
+      "type": "project",
+      "path": "../ContactManager.Data/ContactManager.Data.csproj",
+      "msbuildProject": "../ContactManager.Data/ContactManager.Data.csproj"
+    },
+    "ContactManager.Models/1.0.0": {
+      "type": "project",
+      "path": "../ContactManager.Models/ContactManager.Models.csproj",
+      "msbuildProject": "../ContactManager.Models/ContactManager.Models.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net7.0": [
+      "ContactManager.Data >= 1.0.0",
+      "ContactManager.Models >= 1.0.0",
       "Microsoft.EntityFrameworkCore >= 7.0.5",
       "Microsoft.EntityFrameworkCore.Design >= 7.0.5",
       "Microsoft.EntityFrameworkCore.SqlServer >= 7.0.5",
@@ -3488,7 +3528,14 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\ContactManager\\ContactManager.Data\\ContactManager.Data.csproj": {
+              "projectPath": "D:\\ContactManager\\ContactManager.Data\\ContactManager.Data.csproj"
+            },
+            "D:\\ContactManager\\ContactManager.Models\\ContactManager.Models.csproj": {
+              "projectPath": "D:\\ContactManager\\ContactManager.Models\\ContactManager.Models.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
