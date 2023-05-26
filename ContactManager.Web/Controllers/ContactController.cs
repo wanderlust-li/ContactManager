@@ -1,4 +1,5 @@
 using ContactManager.Data;
+using ContactManager.Data.Repository.IRepository;
 using ContactManager.Models;
 using Microsoft.AspNetCore.Mvc;
 
@@ -6,18 +7,17 @@ namespace ContactManager.Web.Controllers;
 
 public class ContactController : Controller
 {
-    private readonly ApplicationDbContext _context;
+    private readonly IUnitOfWork _unitOfWork;
 
-    public ContactController(ApplicationDbContext context)
+    public ContactController(IUnitOfWork unitOfWork)
     {
-        _context = context;
+        _unitOfWork = unitOfWork;
     }
     // GET
     public IActionResult Index()
     {
-        IEnumerable<Contact> allContacts = _context.Contacts;
-
-        return View(allContacts);
+        List<Contact> contactList = _unitOfWork.Contact.GetAll().ToList();
+        return View(contactList);
     }
     public IActionResult Create()
     {
@@ -31,8 +31,8 @@ public class ContactController : Controller
     {
         if (ModelState.IsValid)
         {
-            _context.Contacts.Add(contact);
-            _context.SaveChanges();
+            _unitOfWork.Contact.Add(contact);
+            _unitOfWork.Save();
             return RedirectToAction("Index");
         }
 
@@ -44,7 +44,7 @@ public class ContactController : Controller
         if (id == null || id == 0)
             return NotFound();
 
-        Contact? contactFromDb = _context.Contacts.FirstOrDefault(u => u.Id == id);
+        Contact? contactFromDb = _unitOfWork.Contact.Get(u => u.Id == id);
         if (contactFromDb == null)
             return NotFound();
 
@@ -56,14 +56,14 @@ public class ContactController : Controller
     [ValidateAntiForgeryToken]
     public IActionResult DeletePOST(int ?id)
     {
-        Contact? contactFromDb = _context.Contacts.FirstOrDefault(u => u.Id == id);
+        Contact? contactFromDb = _unitOfWork.Contact.Get(u => u.Id == id);
 
         if (contactFromDb == null)
             return NotFound();
         
 
-        _context.Contacts.Remove(contactFromDb);
-        _context.SaveChanges();
+        _unitOfWork.Contact.Remove(contactFromDb);
+        _unitOfWork.Save();
         return RedirectToAction("Index");
     }
 
@@ -72,7 +72,7 @@ public class ContactController : Controller
         if (id == null || id == 0)
             return NotFound();
         
-        var contactFromDb = _context.Contacts.FirstOrDefault(u => u.Id == id);
+        var contactFromDb = _unitOfWork.Contact.Get(u => u.Id == id);
         
         if (contactFromDb == null)
             return NotFound();
@@ -86,8 +86,8 @@ public class ContactController : Controller
     {
         if (ModelState.IsValid)
         {
-            _context.Contacts.Update(contact);
-            _context.SaveChanges();
+            _unitOfWork.Contact.Update(contact);
+            _unitOfWork.Save();
             return RedirectToAction("Index");
         }
 
