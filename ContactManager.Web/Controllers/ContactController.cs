@@ -14,17 +14,20 @@ public class ContactController : Controller
         _unitOfWork = unitOfWork;
     }
     // GET
+    // Отримує список всіх контактів з бази даних через IUnitOfWork і передає його в представлення "Index"
     public IActionResult Index()
     {
         List<Contact> contactList = _unitOfWork.Contact.GetAll().ToList();
         return View(contactList);
     }
+    // Повертає представлення "Create", яке використовується для створення нового контакту
     public IActionResult Create()
     {
         return View();
     }
 
     // POST
+    // переданий з форми, перевіряє його валідність, додає його до бази даних через IUnitOfWork та зберігає зміни. Потім перенаправляє на дію "Index"
     [HttpPost]
     [ValidateAntiForgeryToken]
     public IActionResult Create(Contact contact)
@@ -38,7 +41,8 @@ public class ContactController : Controller
 
         return View(contact);
     }
-
+    
+    // Отримує контакт з бази даних за заданим id через IUnitOfWork та повертає його в представлення "Delete" для підтвердження видалення
     public IActionResult Delete(int? id)
     {
         if (id == null || id == 0)
@@ -52,6 +56,8 @@ public class ContactController : Controller
     }
     
     // POST
+    
+    //  Отримує контакт з бази даних за заданим id через IUnitOfWork, видаляє його та зберігає зміни. Потім перенаправляє на дію "Index"
     [HttpPost, ActionName("Delete")]
     [ValidateAntiForgeryToken]
     public IActionResult DeletePOST(int ?id)
@@ -66,7 +72,7 @@ public class ContactController : Controller
         _unitOfWork.Save();
         return RedirectToAction("Index");
     }
-
+    // Отримує контакт з бази даних за заданим id через IUnitOfWork та повертає його в представлення "Edit" для редагування
     public IActionResult Edit(int? id)
     {
         if (id == null || id == 0)
@@ -82,6 +88,7 @@ public class ContactController : Controller
 
     [HttpPost]
     [ValidateAntiForgeryToken]
+    // перевіряє Contact валідність, оновлює його дані в базі даних через IUnitOfWork та зберігає зміни. Потім перенаправляє на дію "Index"
     public IActionResult Edit(Contact contact)
     {
         if (ModelState.IsValid)
