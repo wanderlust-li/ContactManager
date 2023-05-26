@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "q3O/putHjT3JcshXZ0AgQUoeV2StzUcQO0pTUdwUu10=",
+  "Hash": "37zSegmY5+LrhaOOG4lyYrpKiFXg2F4U55n7OogRZAM=",
   "Source": "ContactManager.Web",
   "BasePath": "_content/ContactManager.Web",
   "Mode": "Default",
@@ -49,6 +49,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "D:\\ContactManager\\ContactManager.Web\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\ContactManager.Web.bundle.scp.css"
+    },
+    {
+      "Identity": "D:\\ContactManager\\ContactManager.Web\\wwwroot\\css\\bootswatchTheme.css",
+      "SourceId": "ContactManager.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\ContactManager\\ContactManager.Web\\wwwroot\\",
+      "BasePath": "_content/ContactManager.Web",
+      "RelativePath": "css/bootswatchTheme.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\bootswatchTheme.css"
     },
     {
       "Identity": "D:\\ContactManager\\ContactManager.Web\\wwwroot\\css\\site.css",

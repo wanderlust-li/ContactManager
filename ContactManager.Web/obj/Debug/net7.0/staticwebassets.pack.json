@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\ContactManager.Web.bundle.scp.css"
     },
     {
+      "Id": "D:\\ContactManager\\ContactManager.Web\\wwwroot\\css\\bootswatchTheme.css",
+      "PackagePath": "staticwebassets\\css\\bootswatchTheme.css"
+    },
+    {
       "Id": "D:\\ContactManager\\ContactManager.Web\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
